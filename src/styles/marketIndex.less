@@ -1,0 +1,379 @@
+@color:#6c6b6b;
+@font-size:12px;
+@padding-left:12px;
+@float:left;
+@text-align:center;
+@height:43px;
+@right:12px;
+@color-up:#85292d;
+@color-dowm:#0a5c3e;
+
+.main{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 68px;
+  height: 100%;
+  padding-top: 3px;
+  box-sizing: border-box;
+}
+
+.market-warp{
+  position: absolute;
+  top: 0;
+  left: 71px;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.menu ul .list{
+  width: 64px;
+  height: 42px;
+  color: @color;
+  border-left: 4px solid #131014;
+  border-bottom: 1px solid #131014;
+  font-size: @font-size;
+  text-align: @text-align;
+  line-height: @height;
+}
+.menu ul .list.clic{
+  background-color: #252526;
+  border-left-color: #f67c35;
+  border-bottom-color:#403e41;
+}
+
+.market-index{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color:#fff;
+  font-size:16px;
+  line-height:1.5;
+}
+
+// 市场左部区域
+.wrap-left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 283px ;
+  height: 100%;
+}
+
+.wrap-left .top{
+  position: relative;
+  padding-top: 3px;
+  height: 40%;
+  box-sizing: border-box;
+}
+
+.wrap-left .top-left{
+  position: absolute;
+  top: 35px;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  overflow-y: hidden;
+}
+
+.wrap-left .top-right{
+  position: absolute;
+  top: 35px;
+  right: 0;
+  bottom: 0;
+  width: 59.4%;
+}
+
+.wrap-left .center{
+  position: relative;
+  height: 30%;
+  padding-top: 3px;
+  box-sizing: border-box;
+}
+.wrap-left .center .center-list-1{
+  position: absolute;
+  top: 3px;
+  left: 0;
+  bottom: 0;
+  width: 33.3%;
+  padding-right: 2px;
+  overflow-y: hidden;
+}
+.wrap-left .center .center-list{
+  position: absolute;
+  top: 3px;
+  left: 0;
+  bottom: 0;
+  width: 33.3%;
+  padding-right: 3px;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.wrap-left .center .center-list-1{  
+  left: 0;
+}
+
+.wrap-left .center .center-list-2{
+  left: 33.3%;
+  width: 33.4%;
+}
+
+.wrap-left .center .center-list-3{
+  left: 66.7%;
+  padding-right: 0;
+}
+
+.wrap-left .bottom{
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 100%;
+  height: 30%;
+}
+
+.wrap-left .bottom .bottom-list-1{
+  position: absolute;
+  top: 3px;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  padding-right: 3px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.wrap-left .bottom .fund-type{
+  height: 40px;
+  padding-left: @padding-left;
+  background-color: #161618;
+}
+.wrap-left .bottom .fund-type a{
+  margin-right: 10px;
+  font-size: @font-size;
+  color: #bbbbbb;
+  line-height: 35px;
+}
+.wrap-left .bottom .bottom-list-2{
+  position: absolute;
+  top: 3px;
+  bottom: 0;
+  left: 40%;
+  width: 60%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.wrap-left .bottom-list-2 .item{
+    position: relative;
+    height: 40px;
+    padding: 0 12px;
+    background-color: #1a1a1c;
+    font-size: 12px;
+    color: #bbb;
+    line-height: 40px;
+    border-bottom: 1px solid #252526;
+    box-sizing: border-box;
+}
+
+.wrap-left .bottom-list-2 .item a{
+    color: #bbb;
+}
+
+.wrap-left .bottom-list-2 .item .date{
+  position: absolute;
+  right: 12px;
+}
+
+.tBar{
+  position: relative;
+  height: 32px;
+  padding:0 12px;
+  background-color: #27272c;
+  font-size: @font-size+2;
+  color: #f1f1f2;
+  line-height: 32px;
+}
+
+.tBar .more{
+  position: absolute;
+  right: @right;
+  font-size: @font-size;
+  color: #f1f1f2;
+}
+
+.tBar .all{
+  margin-left: 30px;
+  font-size: @font-size;
+  color: #f1f1f2;
+}
+
+.wrap-left .top-left .table-box{
+  padding-top: 0;
+}
+.table-box{
+  background-color: #1a1a1c;
+}
+.table-box .item{
+  float: left;
+  font-size: @font-size;
+  color: #bbbbbb;
+  border-bottom: 1px solid #252526;
+  border-right: 1px solid #252526;
+  box-sizing: border-box;
+}
+
+.table-box .item.name{
+  width: 34%;
+  padding-left: 10px;
+}
+
+.table-box .item:last-child{
+  border-right: 0px solid #252526;
+}
+
+.table-box .item-group:last-child .item{
+  border-bottom: 0px solid #252526;
+}
+
+.table-box .item.price,
+.table-box .item.rate,
+.table-box .item.rate-price,
+.table-box .item.volume{
+  width: 22%;
+  text-align: center;
+}
+
+.center .table-box .item.name{
+  width: 40%;
+  padding-left: 10px;
+}
+
+.center .table-box .item.buy,
+.center .table-box .item.sale{
+  width: 30%;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.thead .item{
+  height: 30px;
+  line-height: 30px;
+}
+.tbody .item{
+  height: 40px;
+  line-height: 40px;
+}
+.tbody .item.name{
+  line-height: 1.4;
+  padding-top: 4px; 
+}
+.table-box .name span{
+  width: 19px;
+  height: 12px;
+  background-color: #5f7c8a;
+  border-radius: 3px;
+  color: #000000;
+  text-align: center;
+  line-height: 12px;
+  display: inline-block;
+}
+
+.table-box .item a{
+  display: block;
+  width: 100%;
+  color: #bbbbbb;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.table-box .color-up{
+  color: @color-up;
+}
+.table-box .color-down{
+  color: @color-dowm;
+}
+
+.wrap-right{
+  position: absolute;
+  top: 0;
+  right:0;
+  width: 280px;
+  height: 100%;
+  padding-top: 3px;
+  box-sizing: border-box;
+}
+.wrap-right .right-top{
+  height: 80px;
+  background-color: #1a1a1c;
+}
+.wrap-right .right-top .quick-link{
+  width: 50%;
+  height: 50%;
+  float: @float;
+  font-size: @font-size;
+  color: #bbbbbb;
+  text-align: @text-align;
+  line-height: 40px;
+}
+
+.wrap-right .right-center{
+  position: absolute;
+  top: 86px;
+  left: 0;
+  bottom: 230px;
+  width: 100%;
+}
+
+.wrap-right .table-box .name{
+  width: 40%;
+}
+
+.wrap-right .table-box .price,.wrap-right .table-box .rate{
+  width: 30%;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.wrap-right .right-center .rose,.wrap-right .right-center .drop{
+  height: 50%;
+  overflow: hidden;
+}
+
+.wrap-right .right-bottom{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 230px;
+  padding-top:3px;
+  box-sizing: border-box;
+}
+.wrap-right .right-bottom .cont .txt{
+  height: 40px;;
+  padding-left: @padding-left;
+  font-size: @font-size;
+  color: #bbbbbb;
+  line-height: 40px;
+}
+.wrap-right .right-bottom .cont .no-event{
+  height: 147px;
+  background: url("../images/cal-02.png") 50% 40% no-repeat;
+  background-size: 53px 58px;
+  text-align: @text-align;
+  font-size: @font-size;
+  color: #bbbbbb;
+  line-height: 230px;
+}
+
+
+
